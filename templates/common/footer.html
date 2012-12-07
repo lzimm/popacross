@@ -1,0 +1,107 @@
+</div>
+
+<div id="logo">
+	<div class="bg"></div>
+	<div class="fg">
+		<a href="#"><h1>Popacross</h1><span>create a page</span></a>
+	</div>
+</div>
+
+<div id="searchresults">
+	<div class="bg"></div>
+	<div class="fg"><div class="listing">
+	</div></div>
+</div>
+
+<div id="search">	
+	<div id="searchbar">
+		<div class="bg"></div>
+		<div class="fg">
+			<form id="searchform" method="get" action="/item/search">
+				<div class="input_wrap search_input_wrap"><input type="text" id="search_q" name="q" placeholder="Search" autocomplete="off" /></div>
+				<div class="input_wrap geo_input_wrap">
+					<input id="search_location" name="search_location" type="text" placeholder="Location" autocomplete="off" value="${(geoip.a()!"")}" />
+					<a href="#" class="cancel">cancel</a>
+				</div>
+			
+				<div class="geo">
+					<b></b><span>${(geoip.a()!"")}</span>
+					<input id="search_lat" name="lat" type="hidden" value="${(geoip.b()!"")}" />
+					<input id="search_lng" name="lng" type="hidden" value="${(geoip.c()!"")}" />
+				</div>
+				<button><span>Search</span></button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="builder">
+	<div class="bg"></div>
+	<div class="fg">
+		<h1><strong>Popacross</strong><span>Building simple beautiful pages to showcase what you want to share.</span></h1>
+		<form method="post" action="/api/item/update/" id="post_form">
+			<dl id="post_label_container">
+				<dt>Title your post</dt>
+				<dd><input type="text" id="post_label" name="label" value="" placeholder="Label"></dd>
+			</dl>
+			
+			<dl id="post_location_container">
+				<dt>Tell us where it's being posted from</dt>
+				<dd><input type="text" id="post_location_form" name="post_location_form" value="${(geoip.a()!"")}" placeholder="Location"></dd>
+
+				<input id="post_location" name="location" type="hidden" value="${(geoip.a()!"")}" />
+				<input id="post_lat" name="lat" type="hidden" value="${(geoip.b()!"")}" />
+				<input id="post_lng" name="lng" type="hidden" value="${(geoip.c()!"")}" />
+			</dl>
+
+			<dl id="post_description_container">
+				<dt>Then Describe it</dt>
+				<dd><textarea id="post_description" name="description" value="" placeholder="Description" rows="8"></textarea></dd>
+			</dl>
+			
+			<dl id="post_photo_container">
+				<dt>And add some photos to really make it pop</dt>
+
+				<dd id="file_list"></dd>
+				<dd id="file_button"><a href="" class="btn btn_file file_select" id="file_select">Attach Photo</a></dd>
+			</dl>
+			
+			<dl id="post_identity_container">
+				<dt>Then claim it as yours</dt>
+
+				<dd id="post_identity_twitter">
+		            <#if (me.val("twitterIdentity")!"") != "">
+						<a href="#" class="btn btn_ident_remove ident_remove ident_remove_twitter" onclick="removeTwitter(); return false;">x</a>
+		                <a href="${(me.val("twitterIdentity").val("url")!"twitterUrl")}" class="ident ident_twitter" target="_blank"><b></b><span>@${(me.val("twitterIdentity").val("user")!"twitterUser")}</span></a>
+		            <#else>
+		                <a href="#" onclick="loginTwitter(); return false;" class="btn btn_login login login_twitter"><b></b><span>Login With Twitter</span></a>
+		            </#if>					
+				</dd>
+
+				<dd id="post_identity_facebook">
+		            <#if (me.val("facebookIdentity")!"") != "">
+						<a href="#" class="btn btn_ident_remove ident_remove ident_remove_facebook" onclick="removeFacebook(); return false;">x</a>
+		                <a href="${(me.val("facebookIdentity").val("url")!"facebookUrl")}" class="ident ident_facebook" target="_blank"><b></b><span>${(me.val("facebookIdentity").val("name")!"facebookName")}</span></a>
+		            <#else>
+		                <a href="#" onclick="loginFacebook(); return false;" class="btn btn_login login login_facebook"><b></b><span>Login With Facebook</span></a>
+		            </#if>
+				</dd>	
+			</dl>
+			
+			<dl id="post_submit_container">
+				<dt>And fire away!</dt>
+
+				<input type="hidden" id="post_startTime" name="startTime" val="" />
+				<input type="hidden" id="post_endTime" name="endTime" val="" />
+
+				<dd id="post_submit"><a href="#" class="btn btn_post">Go</a></dd>
+			</dl>
+		</form>
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="/media/js/footer.js"></script>
+
+</html>

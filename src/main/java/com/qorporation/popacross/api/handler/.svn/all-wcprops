@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/projects/!svn/ver/21/popacross/trunk/src/main/java/com/qorporation/popacross/api/handler
+END
+AuthHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/api/handler/AuthHandler.java
+END
+HomeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/api/handler/HomeHandler.java
+END
+ItemHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/projects/!svn/ver/80/popacross/trunk/src/main/java/com/qorporation/popacross/api/handler/ItemHandler.java
+END

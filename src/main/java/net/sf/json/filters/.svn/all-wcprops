@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters
+END
+FalsePropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/FalsePropertyFilter.java
+END
+MappingPropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/MappingPropertyFilter.java
+END
+TruePropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/TruePropertyFilter.java
+END
+NotPropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/NotPropertyFilter.java
+END
+OrPropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/OrPropertyFilter.java
+END
+AndPropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/AndPropertyFilter.java
+END
+CompositePropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/filters/CompositePropertyFilter.java
+END

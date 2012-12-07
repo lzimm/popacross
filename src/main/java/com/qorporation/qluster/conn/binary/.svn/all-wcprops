@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/binary
+END
+BinaryConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/binary/BinaryConnection.java
+END
+BinaryPayload.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/binary/BinaryPayload.java
+END

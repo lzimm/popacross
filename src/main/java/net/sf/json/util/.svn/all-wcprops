@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util
+END
+JSONBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/JSONBuilder.java
+END
+CycleDetectionStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/CycleDetectionStrategy.java
+END
+EnumMorpher.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/EnumMorpher.java
+END
+JSONTokener.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/JSONTokener.java
+END
+JsonEventListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/JsonEventListener.java
+END
+PropertySetStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/PropertySetStrategy.java
+END
+WebHijackPreventionStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/WebHijackPreventionStrategy.java
+END
+JSONStringer.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/JSONStringer.java
+END
+JavaIdentifierTransformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/JavaIdentifierTransformer.java
+END
+NewBeanInstanceStrategy.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/NewBeanInstanceStrategy.java
+END
+PropertyExclusionClassMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/PropertyExclusionClassMatcher.java
+END
+JSONUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/JSONUtils.java
+END
+PropertyFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/PropertyFilter.java
+END
+WebUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/net/sf/json/util/WebUtils.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/cluster/layer/definition
+END
+BaseLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/cluster/layer/definition/BaseLayer.java
+END
+SynchronizerLayer.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/cluster/layer/definition/SynchronizerLayer.java
+END

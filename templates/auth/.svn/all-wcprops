@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/projects/!svn/ver/5/popacross/trunk/templates/auth
+END
+register.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/projects/!svn/ver/5/popacross/trunk/templates/auth/register.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/projects/!svn/ver/5/popacross/trunk/templates/auth/login.html
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase
+END
+HBaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/HBaseConnection.java
+END
+HBaseBackedEntityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/HBaseBackedEntityManager.java
+END

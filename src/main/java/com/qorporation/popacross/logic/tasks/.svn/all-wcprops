@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/logic/tasks
+END
+ProcessBackgroundTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/projects/!svn/ver/90/popacross/trunk/src/main/java/com/qorporation/popacross/logic/tasks/ProcessBackgroundTask.java
+END
+ProcessThumbnailTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/logic/tasks/ProcessThumbnailTask.java
+END
+DeployPhotoTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/logic/tasks/DeployPhotoTask.java
+END
+ProcessPhotoTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/logic/tasks/ProcessPhotoTask.java
+END
+ProcessScaledTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/logic/tasks/ProcessScaledTask.java
+END

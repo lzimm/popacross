@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/typesafety/keytypes/column
+END
+IntegerIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/typesafety/keytypes/column/IntegerIndex.java
+END
+LongIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/typesafety/keytypes/column/LongIndex.java
+END
+GeoPointIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/typesafety/keytypes/column/GeoPointIndex.java
+END
+TimeUUIDIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/typesafety/keytypes/column/TimeUUIDIndex.java
+END
+StringIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/hbase/typesafety/keytypes/column/StringIndex.java
+END

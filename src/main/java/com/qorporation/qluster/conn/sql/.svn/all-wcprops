@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql
+END
+SQLConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/SQLConnection.java
+END
+SQLBackedEntityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/SQLBackedEntityManager.java
+END
+SQLNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/SQLNode.java
+END

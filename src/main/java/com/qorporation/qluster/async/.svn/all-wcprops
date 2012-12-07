@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/async
+END
+AsyncTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/async/AsyncTask.java
+END
+AsyncQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/async/AsyncQueue.java
+END
+AsyncTaskCostTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/async/AsyncTaskCostTracker.java
+END
+AsyncService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/async/AsyncService.java
+END

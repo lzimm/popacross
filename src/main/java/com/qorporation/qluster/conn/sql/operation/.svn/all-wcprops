@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation
+END
+SQLSaveOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLSaveOperation.java
+END
+SQLGetOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLGetOperation.java
+END
+SQLOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLOperation.java
+END
+SQLDeleteOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLDeleteOperation.java
+END
+SQLUpdateOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLUpdateOperation.java
+END
+SQLPredicateUpdateOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLPredicateUpdateOperation.java
+END
+SQLInsertOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLInsertOperation.java
+END
+SQLQueryOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLQueryOperation.java
+END
+SQLPredicateQueryOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/conn/sql/operation/SQLPredicateQueryOperation.java
+END

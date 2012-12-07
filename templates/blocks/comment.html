@@ -1,0 +1,12 @@
+<li id="comment_${(comment.getKey())}" comment="${(comment.getKey())}">
+	<#if (comment.val("facebookIdentity")!"") != "" || (comment.val("twitterIdentity")!"") != "">
+		<#if (comment.val("twitterIdentity")!"") != "">
+			<a href="${(comment.val("twitterIdentity").val("url"))}" target="_blank">@${(comment.val("twitterIdentity").val("user"))}</a>
+		<#else>
+			<a href="${(comment.val("facebookIdentity").val("url"))}" target="_blank">${(comment.val("facebookIdentity").val("name"))}</a>
+		</#if>
+	<#else>
+		<a href="#">anonymous:</a>
+	</#if>
+	<span>${(comment.val("comment"))}</span></li>
+</li>

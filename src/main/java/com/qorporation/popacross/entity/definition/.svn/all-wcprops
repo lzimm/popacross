@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition
+END
+UserToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/UserToken.java
+END
+ItemComment.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/ItemComment.java
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/Comment.java
+END
+ItemProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/projects/!svn/ver/33/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/ItemProperty.java
+END
+SearchToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/SearchToken.java
+END
+ItemPhoto.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/ItemPhoto.java
+END
+Identity.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/Identity.java
+END
+ItemTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/ItemTag.java
+END
+BetaUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/projects/!svn/ver/25/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/BetaUser.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/projects/!svn/ver/80/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/Item.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/definition/User.java
+END

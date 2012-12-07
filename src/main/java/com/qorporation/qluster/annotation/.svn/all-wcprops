@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/annotation
+END
+AuthenticationPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/annotation/AuthenticationPolicy.java
+END
+ViewMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/annotation/ViewMapping.java
+END
+Routing.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/annotation/Routing.java
+END

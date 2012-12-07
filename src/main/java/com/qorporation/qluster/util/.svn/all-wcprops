@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util
+END
+BaseConversion.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/BaseConversion.java
+END
+ClassWalkerFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/ClassWalkerFilter.java
+END
+UnzipUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/UnzipUtil.java
+END
+RelativePath.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/RelativePath.java
+END
+ErrorControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/ErrorControl.java
+END
+Reflection.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/Reflection.java
+END
+ClassWalker.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/ClassWalker.java
+END
+SimpleProfiler.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/SimpleProfiler.java
+END
+Serialization.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/Serialization.java
+END
+EscapeUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/util/EscapeUtil.java
+END

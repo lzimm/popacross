@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager
+END
+SearchTokenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/SearchTokenManager.java
+END
+ItemPhotoManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/ItemPhotoManager.java
+END
+IdentityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/IdentityManager.java
+END
+ItemTagManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/ItemTagManager.java
+END
+BetaUserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/projects/!svn/ver/25/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/BetaUserManager.java
+END
+ItemManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/ItemManager.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/UserManager.java
+END
+UserTokenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/UserTokenManager.java
+END
+ItemCommentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/ItemCommentManager.java
+END
+CommentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/CommentManager.java
+END
+ItemPropertyManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/projects/!svn/ver/33/popacross/trunk/src/main/java/com/qorporation/popacross/entity/manager/ItemPropertyManager.java
+END

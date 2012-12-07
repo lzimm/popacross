@@ -1,0 +1,822 @@
+/*
+  Bootstrap v1.1
+  Variables and mixins to bootstrap any new web development project.
+*/
+/* Variables
+-------------------------------------------------- */
+/* Mixins
+-------------------------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+.center-block {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.container:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+#flexbox .display-box {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+}
+#reset .global-reset html,
+#reset .global-reset body,
+#reset .global-reset div,
+#reset .global-reset span,
+#reset .global-reset applet,
+#reset .global-reset object,
+#reset .global-reset iframe,
+#reset .global-reset h1,
+#reset .global-reset h2,
+#reset .global-reset h3,
+#reset .global-reset h4,
+#reset .global-reset h5,
+#reset .global-reset h6,
+#reset .global-reset p,
+#reset .global-reset blockquote,
+#reset .global-reset pre,
+#reset .global-reset a,
+#reset .global-reset abbr,
+#reset .global-reset acronym,
+#reset .global-reset address,
+#reset .global-reset big,
+#reset .global-reset cite,
+#reset .global-reset code,
+#reset .global-reset del,
+#reset .global-reset dfn,
+#reset .global-reset em,
+#reset .global-reset img,
+#reset .global-reset ins,
+#reset .global-reset kbd,
+#reset .global-reset q,
+#reset .global-reset s,
+#reset .global-reset samp,
+#reset .global-reset small,
+#reset .global-reset strike,
+#reset .global-reset strong,
+#reset .global-reset sub,
+#reset .global-reset sup,
+#reset .global-reset tt,
+#reset .global-reset var,
+#reset .global-reset b,
+#reset .global-reset u,
+#reset .global-reset i,
+#reset .global-reset center,
+#reset .global-reset dl,
+#reset .global-reset dt,
+#reset .global-reset dd,
+#reset .global-reset ol,
+#reset .global-reset ul,
+#reset .global-reset li,
+#reset .global-reset fieldset,
+#reset .global-reset form,
+#reset .global-reset label,
+#reset .global-reset legend,
+#reset .global-reset table,
+#reset .global-reset caption,
+#reset .global-reset tbody,
+#reset .global-reset tfoot,
+#reset .global-reset thead,
+#reset .global-reset tr,
+#reset .global-reset th,
+#reset .global-reset td,
+#reset .global-reset article,
+#reset .global-reset aside,
+#reset .global-reset canvas,
+#reset .global-reset details,
+#reset .global-reset embed,
+#reset .global-reset figure,
+#reset .global-reset figcaption,
+#reset .global-reset footer,
+#reset .global-reset header,
+#reset .global-reset hgroup,
+#reset .global-reset menu,
+#reset .global-reset nav,
+#reset .global-reset output,
+#reset .global-reset ruby,
+#reset .global-reset section,
+#reset .global-reset summary,
+#reset .global-reset time,
+#reset .global-reset mark,
+#reset .global-reset audio,
+#reset .global-reset video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#reset .global-reset body {
+  line-height: 1;
+}
+#reset .global-reset ol, #reset .global-reset ul {
+  list-style: none;
+}
+#reset .global-reset table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#reset .global-reset caption, #reset .global-reset th, #reset .global-reset td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+#reset .global-reset q, #reset .global-reset blockquote {
+  quotes: none;
+}
+#reset .global-reset q:before,
+#reset .global-reset blockquote:before,
+#reset .global-reset q:after,
+#reset .global-reset blockquote:after {
+  content: "";
+  content: none;
+}
+#reset .global-reset a img {
+  border: none;
+}
+#reset .global-reset article,
+#reset .global-reset aside,
+#reset .global-reset details,
+#reset .global-reset figcaption,
+#reset .global-reset figure,
+#reset .global-reset footer,
+#reset .global-reset header,
+#reset .global-reset hgroup,
+#reset .global-reset menu,
+#reset .global-reset nav,
+#reset .global-reset section {
+  display: block;
+}
+#reset .reset-box-model {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+#reset .reset-font {
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+#reset .reset-focus {
+  outline: 0;
+}
+#reset .reset-body {
+  line-height: 1;
+}
+#reset .reset-list-style {
+  list-style: none;
+}
+#reset .reset-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#reset .reset-table-cell {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+#reset .reset-quotation {
+  quotes: none;
+}
+#reset .reset-quotation:before, #reset .reset-quotation:after {
+  content: "";
+  content: none;
+}
+#reset .reset-image-anchor-border {
+  border: none;
+}
+#reset .reset-html5 article,
+#reset .reset-html5 aside,
+#reset .reset-html5 details,
+#reset .reset-html5 figcaption,
+#reset .reset-html5 figure,
+#reset .reset-html5 footer,
+#reset .reset-html5 header,
+#reset .reset-html5 hgroup,
+#reset .reset-html5 menu,
+#reset .reset-html5 nav,
+#reset .reset-html5 section {
+  display: block;
+}
+/************************************************************
+* RESET
+************************************************************/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+code,
+del,
+dfn,
+em,
+img,
+q,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+textarea,
+select,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+table, td, th {
+  vertical-align: middle;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+a img {
+  border: none;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  background: #161616 url(../img/bg/tile.dark.png);
+  background-attachment: fixed;
+  text-align: center;
+}
+/************************************************************
+* SPLASH
+************************************************************/
+.s_container {
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.6em;
+}
+.s_logo {
+  width: 75%;
+  height: auto;
+  max-width: 523px;
+  margin: 0 auto;
+}
+.s_aux {
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 5px;
+  width: 75%;
+  max-width: 523px;
+  margin: 0 auto;
+  text-align: left;
+}
+.s_aux span {
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+  line-height: 1.6em;
+  font-size: 0.8em;
+  padding: 1.2em 15px;
+  display: block;
+  color: rgba(255, 255, 255, 0.25);
+  box-sizing: border-box;
+}
+.s_aux input {
+  background-color: rgba(255, 255, 255, 0.05);
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.03)), to(rgba(255, 255, 255, 0.05)));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.03)), color-stop(100%, rgba(255, 255, 255, 0.05)));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0.03)', endColorstr='rgba(255, 255, 255, 0.05)', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0.03)', endColorstr='rgba(255, 255, 255, 0.05)', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* the standard */
+
+  background-color: rgba(0, 0, 0, 0.05);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-border-radius: 3px 0px 0px 3px;
+  border-radius: 3px 0px 0px 3px;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  width: 75%;
+  box-sizing: border-box;
+  padding: 1.2em;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+  float: left;
+}
+.s_aux button {
+  display: inline-block;
+  background-color: #000000;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#000000), to(#000000));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(#000000, #000000);
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(#000000, #000000);
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #000000));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(#000000, #000000);
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(#000000, #000000);
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(#000000, #000000);
+  /* the standard */
+
+  padding: 0;
+  text-shadow: 0 -1px 1px #000000;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1em;
+  line-height: 20px;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.01);
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.01)));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0.01)));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0.1)', endColorstr='rgba(255, 255, 255, 0.01)', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0.1)', endColorstr='rgba(255, 255, 255, 0.01)', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  /* the standard */
+
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  -moz-border-radius: 0px 3px 3px 0px;
+  border-radius: 0px 3px 3px 0px;
+  border: none;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  line-height: 3em;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  width: 25%;
+  margin-left: 75%;
+}
+.s_aux button:hover {
+  background-position: 0 -15px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+/************************************************************
+* FRAME
+************************************************************/
+.p_back {
+  background: #161616 url(../img/bg/tile.dark.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.p_front {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.p_container {
+  margin: 0 auto;
+  width: 100%;
+  line-height: 2em;
+  font-size: 1.6em;
+  color: #fff;
+  text-align: left;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 999999999999;
+}
+.p_scroller {
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+/************************************************************
+* VIEW
+************************************************************/
+.p_gal {
+  position: relative;
+  overflow: hidden;
+}
+.p_gal .pg_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.p_gal .pg_layer .pgl_tint {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.p_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 14px;
+  margin-top: -10px;
+  text-align: center;
+}
+.p_scroll a {
+  zoom: 1;
+  display: inline;
+  display: inline-block;
+  padding-top: 14px;
+  line-height: 14px;
+  overflow: hidden;
+  height: 0px;
+  width: 14px;
+  background-color: rgba(255, 255, 255, 0.25);
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  margin: 0 3px;
+}
+.p_scroll a.active, .p_scroll a:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.p_caption {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px 0;
+}
+.p_act {
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 50px;
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 9999999999;
+}
+.p_act a {
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.25), 0 0 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.25), 0 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.25), 0 0 25px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: #999;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 50px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+.p_view {
+  padding: 40px;
+  margin: 0 auto;
+}
+.pv_main {
+  text-align: left;
+}
+.pv_main .pvm_header {
+  padding-top: 30px;
+}
+.pv_main .pvm_header h1 {
+  font-size: 1.2em;
+  line-height: 1.8em;
+  font-weight: normal;
+  color: #000;
+}
+.pv_main .pvm_body p {
+  font-size: 1em;
+  line-height: 1.4em;
+  font-weight: normal;
+  color: #666;
+}
+.pv_aux {
+  line-height: 1.2em;
+}
+.pv_aux .pva_comments {
+  width: 100%;
+  overflow-x: hidden;
+}
+.pv_aux .pva_comments .pvac_thread {
+  list-style-type: none;
+  padding: 40px 0;
+}
+.pv_aux .pva_comments .pvac_thread li {
+  line-height: 1.4em;
+  font-size: 0.8em;
+}
+.pv_aux .pva_comments .pvac_thread li a {
+  color: #000;
+  text-decoration: none;
+}
+.pv_aux .pva_comments .pvac_thread li a:hover {
+  text-decoration: underline;
+}
+.pv_aux .pva_comments .pvac_thread li span {
+  color: #666;
+}
+.pv_aux .pva_comments .pvac_post textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.03)), to(rgba(255, 255, 255, 0.05)));
+  /* Konqueror */
+
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* FF 3.6+ */
+
+  background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* IE10 */
+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.03)), color-stop(100%, rgba(255, 255, 255, 0.05)));
+  /* Safari 4+, Chrome 2+ */
+
+  background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* Safari 5.1+, Chrome 10+ */
+
+  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* Opera 11.10 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0.03)', endColorstr='rgba(255, 255, 255, 0.05)', GradientType=0);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 255, 255, 0.03)', endColorstr='rgba(255, 255, 255, 0.05)', GradientType=0)";
+  /* IE8+ */
+
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.05));
+  /* the standard */
+
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.25);
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  font-size: 0.8em;
+  height: 6em;
+  line-height: 1.4em;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.2em;
+  color: #666;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 5px;
+}
+.pv_aux .pva_comments .pvac_post span {
+  line-height: 3em;
+  font-size: 0.8em;
+  padding: 0;
+  display: block;
+  float: left;
+  color: #999;
+  box-sizing: border-box;
+  width: 50%;
+}
+.pv_aux .pva_comments .pvac_post a {
+  background-color: #999;
+  color: #fff;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 3em;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+  width: 25%;
+  margin-left: 75%;
+}
+/************************************************************
+* REPLY
+************************************************************/
+.p_reply {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 1.6em;
+}
+.p_reply .pr_ident {
+  background: #fff;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  margin-top: -7.8em;
+  margin-left: -150px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.p_reply .pr_ident span {
+  line-height: 2.6em;
+  font-size: 0.8em;
+  display: block;
+  color: #999;
+  box-sizing: border-box;
+  margin-bottom: 0.8em;
+}
+.p_reply .pr_ident a {
+  background-color: #999;
+  color: #fff;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0;
+  line-height: 3em;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+}
+.p_reply .pr_ident .pri_facebook {
+  margin: 0.5em 0;
+}
+/************************************************************
+* POP
+************************************************************/
+.p_pop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999999;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.p_pop .pp_share {
+  background: #fff;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 142px;
+  margin-top: -71px;
+  width: 230px;
+  margin-left: -115px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.p_pop .pp_share .pps_service {
+  display: block;
+  float: left;
+  width: 55px;
+  height: 62px;
+  padding: 20px;
+}

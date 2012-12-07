@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!--[if IE 6 ]><html class="ie ielt9 ielt8 ielt7 ie6" lang="en-US"><![endif]-->
+<!--[if IE 7 ]><html class="ie ielt9 ielt8 ie7" lang="en-US"><![endif]-->
+<!--[if IE 8 ]><html class="ie ielt9 ie8" lang="en-US"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>${(item.val("label"))!"error"}</title>
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+<link rel="stylesheet" href="/media/css/style.css" type="text/css" charset="utf-8" />
+<script type="text/javascript" src="/media/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="/media/js/iscroll.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18072750-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body style="background: #fff; overflow: hidden;">
+
+<div class="p_back"></div>
+
+<div id="p_scroller" class="p_scroller"><div class="ps_wrapper">
+	<div class="p_front">
+		<div class="p_gal"></div>
+
+		<div class="p_overlay">
+			<div class="p_scroll">
+				<#list photos as img>
+				<a href="#">&nbsp;</a>
+				</#list>
+			</div>
+			<div class="p_caption"><p>Hello</p></div>
+		</div>
+
+		<div class="p_container">
+			<div class="p_view">
+				<div class="pv_main">
+					<div class="pvm_header">
+						<h1>${(item.val("label"))!"error"}</h1>
+					</div>
+					<div class="pvm_body">
+						<@newlines>${(item.val("description"))!"error"}</@newlines>
+					</div>
+				</div>
+
+				<div class="pv_aux">
+					<div class="pva_comments">
+						<ul class="pvac_thread">
+							<#list comments as comment>
+								<#include "/blocks/comment.html">
+							</#list>
+						</ul>
+
+						<div class="pvac_post">
+							<textarea placeholder="" id="pvacp_text"></textarea>
+							<span>popacross</span>
+							<a href="#" class="button pvacp_reply">reply</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="p_act"><a href="#">+</a></div>
+</div></div>
+
+<div class="p_reply">
+	<div class="pr_ident">
+		<span>Identify Yourself</span>
+		<a href="#" class="button pri_twitter">Twitter</a>
+		<a href="#" class="button pri_facebook">Facebook</a>
+		<a href="#" class="button pri_anonymous">Anonymous</a>
+	</div>
+</div>
+
+<div class="p_pop">
+	<div class="pp_share">
+		<div class="pps_service pps_twitter">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-text="${(item.val("label"))!"error"}">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+		<div class="pps_service pps_facebook">
+			<div class="fb-like" data-href="http://popacross.com/v/hello" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false"></div>
+		</div>
+	</div>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=194068833990049";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+var twitterQueue = [];
+var loginTwitter = function(cb) { twitterQueue.push(cb); window.open('/auth/login/twitter', 'twitter', 'location=0,status=0,scrollbars=0,width=800,height=350'); };
+
+var facebookQueue = [];
+var loginFacebook = function(cb) { facebookQueue.push(cb); window.open('/auth/login/facebook', 'twitter', 'location=0,status=0,scrollbars=0,width=800,height=350'); };
+
+var refreshAuthentication = function() {
+    $.getJSON('/api/auth/refresh', function(res) {
+        $(window).trigger("auth_change", res);
+    });
+};
+
+var authStatus = { twitter: null, facebook: null };
+$(window).bind("auth_change", function(ev, res) {
+    if (res.status && res.twitter) {
+        authStatus.twitter = res.twitter;
+        var cb = twitterQueue.shift();
+        while (cb != null) {
+        	cb();
+        	cb = twitterQueue.shift();
+        }
+    } else {
+        authStatus.twitter = null;
+    }
+    
+    if (res.status && res.facebook) {
+    	authStatus.facebook = res.facebook;
+        var cb = facebookQueue.shift();
+        while (cb != null) {
+        	cb();
+        	cb = facebookQueue.shift();
+        }
+    } else {
+        authStatus.facebook = null;
+    }
+});
+
+$(function() {
+	refreshAuthentication();
+
+	$(".p_reply").click(function() {
+		$(this).fadeOut(250);
+	})
+
+	$("a.pvacp_reply").click(function() {
+		$(".p_reply").fadeIn(250);
+		return false;
+	});
+
+	$("a.pri_anonymous").click(function() {
+		$.post("/api/item/comment/add/anonymous/${(item.val("token")!"")}", {
+				comment: $("#pvacp_text").val()
+			}, function(res) {
+				$("#pvacp_text").val("");
+				$.each(res.comments, function(key, value) { 
+						if ($("#comment_" + key).length == 0) {
+							var c = $(value);
+							$(".pvac_thread").prepend(c.hide());
+							c.delay(125).slideDown(500);
+						}
+				});
+
+				$(window).scrollTop($(".pvac_thread").parent().position().top - 10);
+				$(".p_reply").fadeOut(250);
+			}, "json");
+	})
+
+	$("a.pri_twitter").click(function() {
+		if (authStatus.twitter == null) {
+			loginTwitter(function() { $("a.pri_twitter").click(); });
+		} else {
+			$.post("/api/item/comment/add/twitter/${(item.val("token")!"")}", {
+					comment: $("#pvacp_text").val(),
+					twitter: $("#pvacp_text").val()
+				}, function(res) {
+					$("#pvacp_text").val("");
+					$.each(res.comments, function(key, value) { 
+  						if ($("#comment_" + key).length == 0) {
+  							var c = $(value);
+  							$(".pvac_thread").prepend(c.hide());
+  							c.delay(125).slideDown(500);
+  						}
+					});
+
+					$(window).scrollTop($(".pvac_thread").parent().position().top - 10);
+					$(".p_reply").fadeOut(250);
+				}, "json");
+		}
+
+		return false;
+	});
+
+	$("a.pri_facebook").click(function() {
+		if (authStatus.facebook == null) {
+			loginFacebook(function() { $("a.pri_facebook").click(); });
+		} else {
+			$.post("/api/item/comment/add/facebook/${(item.val("token")!"")}", {
+					comment: $("#pvacp_text").val(),
+					facebook: $("#pvacp_text").val()
+				}, function(res) {
+					$("#pvacp_text").val("");
+					$.each(res.comments, function(key, value) { 
+  						if ($("#comment_" + key).length == 0) {
+  							var c = $(value);
+  							$(".pvac_thread").prepend(c.hide());
+  							c.delay(125).slideDown(500);
+  						}
+					});
+
+					$(window).scrollTop($(".pvac_thread").parent().position().top - 10);
+					$(".p_reply").fadeOut(250);
+				}, "json");
+		}
+
+		return false;
+	});
+});
+</script>
+
+<script type="text/javascript">
+var images = [];
+<#list photos as img>
+images.push({
+	href: "${img.b()}",
+	src: "${img.b()}",
+	caption: "${(img.a().val("caption"))!"error"}",
+	width: "${(img.a().val("width"))!"error"}",
+	height: "${(img.a().val("height"))!"error"}"
+});
+</#list>
+var scaled = [];
+<#list scaled as img>
+scaled.push({
+	href: "${img.b()}",
+	src: "${img.b()}",
+	caption: "${(img.a().val("caption"))!"error"}",
+	width: 900,
+	height: 900
+});
+</#list>
+$(window).data("curimg", 0);
+</script>
+
+<script type="text/javascript">
+$(".pv_gal").click(function() {
+	$(".pvg_overlay").fadeIn(250).click(function(e) {
+		if ($(e.target)[0] == $(".pvg_overlay")[0]) {
+			$(".pvg_overlay").fadeOut(250);
+			return false;
+		}
+	});
+}).hover(function() {
+}, function() {
+	$(".pvg_overlay").fadeOut(250);
+});
+
+$(".p_overlay").bind("display", function() {
+	var idx = $(window).data("curimg");
+	$(".p_scroll a").removeClass("active");
+	$(".p_scroll a:eq(" + idx + ")").addClass("active");
+
+	var curFade = $(".p_overlay").data("fader");
+	if (curFade) {
+		clearTimeout(curFade);
+	}
+
+	if ($(window).data("mouse") < $(".p_front").data("offset")) {
+		$(".pgl_tint").fadeIn(250);
+	}
+
+	$(".p_overlay").fadeIn(75).data("fader", setTimeout(function() {
+		$(".p_overlay").fadeOut(500);
+		$(".pgl_tint").fadeOut(150);
+	}, 1000));
+});
+
+$(".p_scroll").children("a").each(function(idx, el) {
+	$(el).click(function() {
+		$(window).trigger("setimg", idx);
+		return false;
+	})
+});
+
+$(window).scroll(function() {
+	$(".pvg_overlay").fadeOut(250);
+	$(".p_overlay").trigger("display");
+});
+
+setInterval(function() {
+	var winTop = window.scroller.y * -1;
+	var winHeight = window.scroller.wrapperH;
+	var offset = $(".p_container").position().top;
+	$(".p_front").data("offset", offset);
+
+	if (offset - winTop < winHeight) {
+		$(".p_act a").fadeIn(250);
+		$(".p_act").css({
+			position: "absolute",
+			bottom: "auto",
+			top: offset - 50
+		});
+
+		$(".p_overlay").css({
+			position: "absolute",
+			top: Math.max((offset / 2), offset - (winHeight / 2))
+		});
+
+		if (!$(".p_act").parent().hasClass("ps_wrapper")) {
+			$(".p_act").appendTo($(".ps_wrapper"));
+			$(".p_overlay").appendTo($(".ps_wrapper"));
+		}
+	} else {
+		$(".p_act a").fadeOut(250);
+		$(".p_act").css({
+			position: "absolute",
+			top: (winHeight - 50)
+		});
+
+		$(".p_overlay").css({
+			position: "absolute",
+			top: (winHeight / 2)
+		});
+
+		if ($(".p_act").parent().hasClass("ps_wrapper")) {
+			$(".p_act").appendTo($("body"));
+			$(".p_overlay").appendTo($("body"));
+		}
+	}
+}, 1);
+
+$(window).mousemove(function(e) {
+	$(window).data("mouse", e.pageY);
+	$(".p_overlay").trigger("display", -1);
+});
+</script>
+
+<script type="text/javascript">
+($(function() {
+	var escapeImgUrl = function(url) {
+		url = url.substr(0, url.indexOf("://") + 3) 
+						+ escape(url.substr(url.indexOf("://") + 3));
+		return url;
+	}
+
+	var calculateProportions = function(scaled, size, fitWidth) {
+	    var sizeRatio = size.height / size.width;
+	    var scaledRatio = scaled.height / scaled.width;
+	    var scale = 1;
+	    var rescaled = { width: size.height, height: size.height };
+
+	    if (!fitWidth && (size.height / scaled.height) > (size.width / scaled.width)) {
+	        scale = size.height / scaled.height;
+	        rescaled.height = size.height;
+	        rescaled.width = scaled.width * scale;
+	    } else {
+			scale = size.width / scaled.width;
+	        rescaled.height = scaled.height * scale;
+	        rescaled.width = size.width;
+	    }
+
+	    return rescaled;
+	}
+
+	var scaleBackground = function(delay) {
+		var winSize = { width: $(".p_front").width() + 33, height: $(window).height() };
+	
+		var imgDat = images[$(window).data("curimg")];
+		var imgSize = { width: imgDat.width, height: imgDat.height };
+		var imgProps = calculateProportions(imgSize, winSize, true);
+		var imgSizeString = imgProps.width + "px " + imgProps.height + "px";
+		var imgPositionString = "-16px 0px";
+
+		var scaledDat = scaled[$(window).data("curimg")];
+		var scaledSize = { width: scaledDat.width, height: scaledDat.height };
+		var scaledProps = calculateProportions(scaledSize, winSize);
+		var scaledSizeString = scaledProps.width + "px " + scaledProps.height + "px";
+		var scaledPositionString = ((winSize.width - scaledProps.width) / 2) + "px " + ((winSize.height - scaledProps.height) / 2) + "px";
+
+		$(".p_gal").data("scaled", {
+			dat: scaledDat,
+			scaleTo: $(window).height(),
+			css: {
+				backgroundImage: "url(" + escapeImgUrl(scaledDat.href) + ")",
+				backgroundSize: scaledSizeString,
+				backgroundPosition: scaledPositionString,
+				backgroundRepeat: "no-repeat",
+				height: $(window).height()
+			}
+		}).data("img", {
+			dat: imgDat,
+			scaleTo: imgProps.height,
+			css: {
+				backgroundImage: "url(" + escapeImgUrl(imgDat.href) + ")",
+				backgroundSize: imgSizeString,
+				backgroundPosition: imgPositionString,
+				backgroundRepeat: "no-repeat",
+				height: imgProps.height
+			}
+		}).trigger("reload");
+	}
+
+	var scrollImg = function(dir) {
+		var curImg = $(window).data("curimg") + dir;
+
+		if (curImg >= images.length) curImg = curImg % images.length;
+		if (curImg < 0) curImg = images.length + curImg;
+
+		$(window).data("curimg", curImg);
+		$(".p_caption p").text(images[curImg].caption);
+
+		$("a.pvgo_pop").attr("href", images[curImg].href);
+
+		try {
+			scaleBackground();
+		} catch (e) {}
+
+		$(".p_overlay").trigger("display");
+	}
+
+	$(document).keydown(function(e) {
+	    if (e.keyCode == 37) { 
+	    	scrollImg(-1);
+	       	return false;
+	    } else if (e.keyCode == 39) {
+	    	scrollImg(1);
+			return false;
+	    }
+	});
+
+	$(window).bind("setimg", function(e, idx) {
+		var cur = $(window).data("curimg");
+		scrollImg(idx - cur);
+	}).resize(scaleBackground);
+
+	$(".p_gal").bind("reload", function(e, mode) {
+		if (mode) {
+			$(".p_gal").data("mode", mode);	
+		} else {
+			mode = $(".p_gal").data("mode");
+		}
+
+		if (!mode) {
+			mode = "img";
+			$(".p_gal").data("mode", mode);
+		}
+
+		var img = $(".p_gal").data(mode);
+		var layer = $("<div class='pg_layer'>").css(img.css).append($("<div class='pgl_tint'>")).hide();
+		var layers = $(".p_gal .pg_layer");
+		$(".p_gal").append(layer);
+
+		if (img.scaleTo == $(".p_front").data("offset")) {
+			layer.fadeIn(50, function() {
+				layers.remove();
+				$("#p_scroller").trigger("refresh");
+			});
+		} else if (img.scaleTo > $(".p_front").data("offset")) {
+			layer.fadeIn(50, function() {
+				layers.remove();
+				$(".p_gal").animate({height: img.scaleTo}, 250, function() {
+					$("#p_scroller").trigger("refresh");
+				});
+			});
+		} else {
+			$(".p_gal").animate({height: img.scaleTo}, 250, function() {
+				layer.fadeIn(50, function() {
+					layers.remove();
+					$("#p_scroller").trigger("refresh");
+				});
+			});
+		}
+	}).click(function(e) {
+		if (e.pageY < $(".p_front").data("offset") - 50) {
+			//$(".p_gal").trigger("reload", ($(".p_gal").data("mode") == "scaled") ? "img" : "scaled");
+		}
+	});
+
+	scrollImg(0);
+}));
+</script>
+
+<script type="text/javascript">
+$(".p_pop").click(function() {
+	$(this).fadeOut(250);
+});
+
+$(".p_act").click(function() {
+	window.scroller.scrollTo(0, Math.floor(-1 * ($(".p_front").data("offset") - (window.scroller.wrapperH * 2 / 4))), 1000, 0);
+});
+
+$(".p_act a").click(function() {
+	$(".p_pop").fadeIn(250);
+	return false;
+});
+
+$(function() {
+	var scroller = new iScroll('p_scroller');
+	$("#p_scroller").bind("refresh", function() {
+		scroller.refresh();
+	});
+
+	window.scroller = scroller;
+});
+</script>
+
+</body>
+</html>

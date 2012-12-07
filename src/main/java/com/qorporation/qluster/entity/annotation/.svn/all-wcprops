@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/entity/annotation
+END
+Prefetch.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/entity/annotation/Prefetch.java
+END
+AllowNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/projects/!svn/ver/5/popacross/trunk/src/main/java/com/qorporation/qluster/entity/annotation/AllowNull.java
+END

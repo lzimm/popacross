@@ -1,0 +1,28 @@
+-- this is fairly old school work yo --
+
+here was the deal. i wanted to do this really simple project, that would
+basically let you create these "really beautiful" pages with one single
+purpose: to have an overwhelmingly beautiful call to action that you just
+couldn't help but engage in it (ie: "buy now" or "share" or "sell mother").
+
+all you would have to do is upload a few images, write a bit of text, decide
+what you wanted said call to action to be (along with specifying all the
+necessaries), and it would slap together a beautiful landing page with a 
+shortlink that you could spam all over your social network. and yeah, this 
+is when the idea was still "in the air", and gumroad, checkthis, and all
+those other things were still also "just being born in secrecy" too.
+
+but, thanks to being all up on using my magically unbattled server framework
+(nothing like NIH syndrome to kill a good project), i ended up getting
+distracted and did other things instead (actually, that's a lie, the backend
+if not unnecessarily complicated for what it was, went together easilly and 
+without much of an issue at all, i just couldn't stop redesigning the thing,
+cuz, you know, story of my life).
+
+anyways, standard disclaimer:
+
+there's a bunch of extra junk in here you probably don't need to run it,
+while on the other hand, its probably missing some stuff you do
+(as well as any explanation of how all this junk works,
+license information that i probably stripped from a bunch of files
+and any sort of sanity). so funny.
